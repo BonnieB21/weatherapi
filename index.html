@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+        <section class="card section-one-card">
+            <div class="search-container">
+                <form onsubmit="updateCity(event)">
+                    <input type="text" id="cityInput" class="cityInput" required placeholder="Enter a city..">
+                    <button type="submit" class="search-button">Search</button> 
+                </form>
+            </div>
+        
+            <div class="cityweather">
+                <h1 id="city">Johannesburg</h1>
+                
+            </div>
+            <div class="dateWeather">
+            <h1 id="date-time" class="date-time"></h1>
+                <h2 id="date-weather" class="date-weather"></h2>
+            </div>
+            <img src=" https://openweathermap.org/img/wn/" alt="Weather Icon" class="weather-icon float-left" />
+            <div class="temperature" id="temperature"></div>
+
+            <div class="info">
+                <h1 id="date-time" class="date-time"></h1>
+                <h2 id="date-weather" class="date-weather"></h2>
+                </div>
+
+            <div class="windSpeed"></div>
+                                
+                
+        </section>
+        <br>
+        <section class="card section-two-card">
+            <div class="weather-forecast">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Sun</div>
+                        <div class="img">
+                        <img src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon" class="weather-icons" />
+                        </div>
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max">19°</span>
+                            <span class="weather-forecast-temperature-min">12°</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Mon</div>
+                        <img src="https://openweathermap.org/img/wn/02d.png" alt="Weather Icon" class="weather-icons" />
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max">22°</span>
+                            <span class="weather-forecast-temperature-min">14°</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Tue</div>
+                        <img src="https://openweathermap.org/img/wn/03d.png" alt="Weather Icon" class="weather-icons" />
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max">20°</span>
+                            <span class="weather-forecast-temperature-min">11°</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Wed</div>
+                        <img src="https://openweathermap.org/img/wn/04d.png" alt="Weather Icon" class="weather-icons" />
+                        <div class="weather-forecast-temperatures">
+                            <span class="weather-forecast-temperature-max">18°</span>
+                            <span class="weather-forecast-temperature-min">10°</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="weather-forecast-date">Thu</div>
+                        <img src="https://openweathermap.org/img/wn/09d.png" alt="Weather Icon" class="weather-icons" />
+                        <div class="weather-forecast-temperatures">
+                    </div>
+        </section>
+        <div class="link">
+            This project was coded by <a href="#">Bonnie Ayeah</a> and is <a href="#">open-sourced on GitHub</a> and <a href="#">hosted on Netlify.</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
