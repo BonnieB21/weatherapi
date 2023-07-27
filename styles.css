@@ -4,21 +4,21 @@ body{
 }
 .search-container{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .cityInput{
-    padding-right: 300px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-radius: 3px;;
+    padding-right: 320px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;;
     border: 1px solid #72118f;
     
 }
 .search-button{
     background-color:#72118f;
     margin-left:2px;
-    padding-top:2px;
-    padding-bottom:2px;
+    padding-top:5px;
+    padding-bottom:5px;
     margin-top:2px;
     border-radius: 3px;
     border:1px solid#a198df;
@@ -28,22 +28,23 @@ body{
 }
 .box{
     margin-left: 100px;
+    margin-right: 100px;
 }
 .cityweather{
-    margin-left:180px;
+    margin-left:200px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .weather-forecast{
     text-align: center;
-    margin-left:125px;
+    margin-left:200px;
 }
 .link{
     text-align: center;
 }
 .info{
-    margin-left:180px;
+    margin-left:200px;
     padding-bottom: 30px;
 }
 .date-time{
@@ -56,7 +57,7 @@ body{
 .date-weather{
     font-size: 15px;
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 50px;
 
 }
 .weather-icon{
@@ -80,15 +81,14 @@ body{
     font-size:50px;
     font-weight:light;
     display: inline-block;
-    vertical-align: middle;
-    position: absolute;
+    
     margin-bottom: 60px;
     padding-top: 50px;
     margin-left:600px;
   } 
   .temperature sup{
     font-size: 20px;
-    
+    margin-bottom: 50px;
     font-weight: light;
     color: #ec729c;
     padding-bottom: 80px;
@@ -98,26 +98,62 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-bottom: 30px;
     margin-top:20px;
-    margin-right: 60px;
+    
   }
   .info{
-    margin-left: 180px;
+    margin-left: 200px;
   }
-  
   .section-one-card {
-    background-color:white;
-    box-shadow: #72118f; 
-  }
-  
-  .section-two-card {
-    background-color:white;
+    background-color: white;
     box-shadow: #72118f;
-    padding-top: 20px;
-    padding-bottom:20px;
+    padding: 20px;
   }
-  
+  h1{
+    margin-left:150px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+  .section-two-card {
+    background-color: white;
+    box-shadow: #72118f;
+    padding: 20px;
+  }
   
   .card + .card {
     margin-top: 20px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .box {
+      padding: 10px;
+    }
+  
+    .cityInput {
+      padding: 6px;
+    }
+  
+    .search-button {
+      padding: 4px 8px;
+    }
+  
+    .info {
+      margin-left: 0;
+    }
+  
+    .weather-forecast {
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .weather-icon {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  
+    .temperature {
+      margin: 0 auto;
+    }
   }
   

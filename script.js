@@ -86,29 +86,6 @@ function convertTemperature() {
         temperatureElement.addEventListener("click", convertTemperature);
     
 
-
-        updateDateTime();
-
-function updateDateTime() {
-    var dateTimeElement = document.getElementById('date-time');
-    var currentDate = new Date();
-
-    var options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
-        hour12: false
-    };
-
-    var formattedDate = currentDate.toLocaleDateString(undefined, options);
-    dateTimeElement.textContent = formattedDate;
-
-    setTimeout(updateDateTime, 1000); 
-}
-
 function showTemperature(response) {
             let weatherData = response.data;
             let temperature = Math.round(weatherData.main.temp);
